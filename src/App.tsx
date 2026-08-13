@@ -12,6 +12,8 @@ import PublicPagesAdmin from '@/pages/PublicPagesAdmin';
 import KlareErfassungPage from '@/pages/KlareErfassungPage';
 import KlareErfassungDetailPage from '@/pages/KlareErfassungDetailPage';
 // <custom:imports>
+const IntentSchnellErfassenPage = lazy(() => import('@/pages/intents/SchnellErfassenPage'));
+const IntentAufgabeAbschliessenPage = lazy(() => import('@/pages/intents/AufgabeAbschliessenPage'));
 // </custom:imports>
 
 // Lazy: public pages live outside <Layout> and only load on /#/public/:slug —
@@ -33,6 +35,8 @@ export default function App() {
                 <Route path="admin" element={<AdminPage />} />
                 <Route path="verwaltung/oeffentliche-seiten" element={<PublicPagesAdmin />} />
                 {/* <custom:routes> */}
+                <Route path="intents/schnell-erfassen" element={<Suspense fallback={null}><IntentSchnellErfassenPage /></Suspense>} />
+                <Route path="intents/aufgabe-abschliessen" element={<Suspense fallback={null}><IntentAufgabeAbschliessenPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>
