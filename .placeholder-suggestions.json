@@ -1,0 +1,10 @@
+{
+  "KlareErfassungDialog.tsx": {
+    "titel": "z. B. Projektplan erstellen",
+    "beschreibung": "Was ist zu tun? Kontext, Ziel, Anforderungen...",
+    "kategorie": "Wähle eine Priorität",
+    "datum": "Wann fällig?",
+    "status": "Bearbeitungsstatus",
+    "anmerkungen": "Besonderheiten, Kontakte, Links..."
+  }
+}

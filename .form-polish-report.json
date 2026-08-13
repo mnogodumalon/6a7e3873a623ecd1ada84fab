@@ -1,0 +1,10 @@
+{
+  "entities": {
+    "Klare Erfassung": {
+      "placeholders_set": 6,
+      "defaults_keys": ["datum", "status", "kategorie"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten-Entity mit Verwaltungslogik. Keine numerischen Felder, keine Applookups, keine berechenbaren Größen. Status und Kategorie haben sinnvolle Anfangs-Defaults, Datum ist Erfassungs-Tag."
+    }
+  }
+}
